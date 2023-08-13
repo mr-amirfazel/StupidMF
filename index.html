@@ -19,7 +19,9 @@
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="./navigator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+
+    
   </head>
   <body>
     <div id="header"></div>
@@ -27,10 +29,9 @@
     <div ng-app="myApp" ng-controller="FooterController" id="footer">
       <app-footer></app-footer>
     </div>
+    <script src="./navigator.js"></script>
     <script type="module" src="/header/header.js"></script>
-    
-    <script data-type="module" type="text/babel" src="/main/main.jsx"></script>
     <script src="/footer/footer.js"></script>
-    
+    <script data-presets="env,react"  type="text/babel" src="/main/main.jsx"></script>
   </body>
 </html>

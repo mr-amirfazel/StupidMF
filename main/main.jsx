@@ -1,11 +1,16 @@
-// import { useState } from '/react';
-import update_route from '../navigator';
 
 
 const Main = ({children}) => {
-  const [currentComponent, setCurrentComponent] = React.useState(null)
+  const onRouteChange = (route) => {
+    setCurrentComponent(route)
+  }
+  const [currentComponent, setCurrentComponent] = React.useState(current_route)
+  React.useEffect(()=>{
+    subscribe(onRouteChange)
+  },[])
+  // observers.push(setCurrentComponent)
   return (
-    <div className="bg-gray-900 h-screen flex justify-center items-center">
+    <div className="bg-gray-900 h-screen flex justify-center items-center" onClick={()=> setCurrentComponent(currentComponent + 'dang ')}>
       <div className="bg-gray-800 p-6 rounded-lg">
         <p className="text-white text-center text-lg">
           {!currentComponent ? <p>Welcome to the Main Page</p> : currentComponent}
@@ -26,6 +31,7 @@ const AboutComponent = () => {
 
 const ContactComponent = () => {
   return <h1>Contact</h1>;
+
 };
 
 
@@ -34,3 +40,5 @@ ReactDOM.render(
   </Main>,
   document.getElementById("main")
 );
+
+// });
