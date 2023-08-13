@@ -62,6 +62,6 @@ const FooterInfo = () => {
 };
 
 const RepoInfo = () => {
-  return <p>the code for this section is available at the github repository</p>;
+  return <p>the code for this section is available at the <a href="https://github.com/mr-amirfazel/StupidMF" target="_blank">github repository</a></p>;
 };
 ReactDOM.render(<Main></Main>, document.getElementById("main"));
