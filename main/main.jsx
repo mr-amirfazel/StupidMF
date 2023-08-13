@@ -80,7 +80,7 @@ const PartialComponentInfo = ({ component }) => {
       <span>
         this stupid header is built using <strong>{component.title}</strong>
       </span>
-      <img src={component.image} alt={component.title} />
+      <img className="max-h-[60vh]" src={component.image} alt={component.title} />
       <RepoInfo />
     </div>
   );
