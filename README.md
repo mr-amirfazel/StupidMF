@@ -1,6 +1,9 @@
 # StupidMF
 stupidest micro-frontend possible
 
+![image](https://github.com/mr-amirfazel/StupidMF/assets/78591315/09f35136-5cb6-43ea-9813-87034f3bbbd5)
+
+
 - no shell
 - no hard to understand archtectue
 
