@@ -3,6 +3,7 @@ let current_route = ''
 
 const update_route = (route) => {
     current_route = route;
+    console.log(current_route)
     update_observers();
 }
 

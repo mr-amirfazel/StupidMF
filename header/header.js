@@ -7,6 +7,7 @@ const app = Vue.createApp({
           <li><a @click="update_route('Vue')" :class="{'text-white hover:cursor-pointer hover:font-bold font-medium text-md': true, 'text-gray-900 font-bold': current_route === 'Vue'}">Vue</a></li>
           <li><a @click="update_route('React')" :class="{'text-white hover:cursor-pointer hover:font-bold font-medium text-md': true, 'text-gray-900 font-bold': current_route === 'React' }">React</a></li>
           <li><a @click="update_route('Angular')" :class="{'text-white hover:cursor-pointer hover:font-bold font-medium text-md': true, 'text-gray-900 font-bold': current_route === 'Angular'  }">Angular</a></li>
+          <li><a @click="update_route('About')" :class="{'text-white hover:cursor-pointer hover:font-bold font-medium text-md': true, 'text-gray-900 font-bold': current_route === 'About'  }">About this project</a></li>
         </ul>
       </nav>
     </header>
