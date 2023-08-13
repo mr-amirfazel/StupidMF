@@ -11,7 +11,6 @@ const subscribe = (fn) => {
 }
 
 const notify = (observer) => {
-    console.log(observer)
     observer(current_route)
 }
 
@@ -20,5 +19,3 @@ const update_observers = () => {
 }
 
 
-
-// export default update_route;
